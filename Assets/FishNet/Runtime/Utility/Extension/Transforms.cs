@@ -36,7 +36,7 @@ namespace FishNet.Utility.Extension
         {
             if (target == null)
                 return;
-            pos = (t.position - target.position);
+            pos = (target.position - t.position);
             rot = (t.rotation * Quaternion.Inverse(target.rotation));
         }
 
